@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/btnLayout"
+                android:layout_marginEnd="24dp"
+                android:layout_marginStart="24dp"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <Button
+                    android:id="@+id/btnAdd"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Add"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Update"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:id="@+id/btnDelete"
+                    android:layout_marginTop="16dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:text="Delete"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/mainLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:orientation="vertical">
+                <Spinner
+                    android:id="@+id/place_cate"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"/>
+                <EditText
+                    android:id="@+id/add_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="64dp"
+                    android:hint=" Name of Place"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#aaaaaa"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+                <EditText
+                    android:id="@+id/add_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:hint=" Description"
+                    android:gravity="left"
+                    android:inputType="textEmailAddress"
+                    android:textColorHint="#aaaaaa"
+                    android:textColor="@color/colorPrimary"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+                <Button
+                    android:id="@+id/add_choose"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/colorPrimary"
+                    android:text="Chosse Photo"
+                    android:layout_gravity="bottom"
+                    android:textSize="18sp"
+                    android:textColor="@color/white" />
+                <ImageView
+                    android:id="@+id/add_imageview"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    android:scaleType="fitXY"
+                    android:background="#aaaaaa"
+                    android:visibility="gone"/>
+                <EditText
+                    android:id="@+id/add_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint=" Address"
+                    android:inputType="textEmailAddress"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="#aaaaaa"
+                    android:backgroundTint="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+                <fragment
+                    android:id="@+id/dashboard_map"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginTop="8dp"
+                    tools:context="com.example.mapwithmarker.MapsMarkerActivity" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:id="@+id/submit_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:layout_marginRight="5dp"
+                        android:background="@color/colorAccent"
+                        android:text="Submit"
+                        android:textSize="18sp"
+                        android:textColor="@color/white"/>
+                    <Button
+                        android:id="@+id/cancel_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="5dp"
+                        android:background="#dddddd"
+                        android:text="Cancel"
+                        android:textSize="18sp"
+                        android:textColor="@color/colorAccent"/>
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <ProgressBar
+        android:id="@+id/dashboard_progress"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:indeterminate="true"
+        android:visibility="invisible" />
+</RelativeLayout>

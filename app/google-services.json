@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "997884938704",
+    "firebase_url": "https://tourguidebosnia.firebaseio.com",
+    "project_id": "tourguidebosnia",
+    "storage_bucket": "tourguidebosnia.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997884938704:android:c64fc589e2440e2e",
+        "android_client_info": {
+          "package_name": "com.coupne.bosniaguide"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "997884938704-jm4uk09pfru9qaf4lsv18v018r9r15p7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.coupne.bosniaguide",
+            "certificate_hash": "7d32e92d81e09d61baa4a0f3537ff9afc908b434"
+          }
+        },
+        {
+          "client_id": "997884938704-ndfqmkrk130j9sm0m0p2j58b5t78vhdd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCh30sbfFS6eUI6THnGxk-UCpGvnmU9qvk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "997884938704-ndfqmkrk130j9sm0m0p2j58b5t78vhdd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
